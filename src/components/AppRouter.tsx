@@ -1,10 +1,9 @@
 import { privateRoutes, publicRoutes } from '../router'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { RouteNames } from '../router/index'
-import { useAppSelector } from '../app/hooks'
 
 const AppRouter = () => {
-  const { auth } = useAppSelector((state) => state.auth)
+  const auth = false
   return (
     <div>
       {auth ? (
